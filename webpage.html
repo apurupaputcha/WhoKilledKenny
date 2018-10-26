@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Find the Killer</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+    li{
+        float:left;
+        line-height:50px;
+        list-style-type:none;
+    }
+    ul:hover li{
+        opacity:0.5;
+        cursor: pointer;
+    }
+    ul li:hover{
+        opacity:1;
+        cursor: pointer;
+    }
+
+    #si1,#si2,#si3,#si4,#si5,#si6,#si7 {
+        display: none;
+    }
+    .sec {
+        white-space:nowrap;
+        position: absolute;
+        height:120px;
+        top:240px;
+        border-top: 1px solid #8c8b8b;
+        padding-top:30px;
+    }
+
+</style>
+<body>
+<div class="col-sm-12">
+    <h2>Who Killed Kenny?</h2>
+    <h6>Hear are the suspects. Your job is to sort them from who you think is the most likely, by clicking on the suspect.</h6>
+    <ul>
+            <li><img src="img1.png" width="100px" height="100px" class="img1" id="i1"></li>
+            <li><img src="img2.png" width="100px" height="100px" class="img2" id="i2"></li>
+            <li><img src="img3.png" width="100px" height="100px" class="img3" id="i3"></li>
+            <li><img src="img4.png" width="100px" height="100px" class="img4" id="i4"></li>
+            <li><img src="img5.png" width="100px" height="100px" class="img5" id="i5"></li>
+            <li><img src="img6.png" width="100px" height="100px" class="img6" id="i6"></li>
+            <li><img src="img7.png" width="100px" height="100px" class="img7" id="i7"></li>
+    </ul>
+</div>
+<div class="sec  col-sm-8">
+</div>
+<div class="col-sm-8">
+    <button  class="btn btn-default  pull-right"  id="reset" value="Reset">Reset</button>
+</div>
+</body>
+</html>
+<script type="text/javascript">
+
+    $(function() {
+        $(".img1").click(function() {
+            console.log("clicked");
+            $('.img1').css("display","none");
+            var img = $('<img id="si1">');
+            img.attr('src', "img1.png");
+            img.attr('width', "100px");
+            img.attr('height', "100px");
+            $(".sec").append(img);
+            $('#si1').css("display","inline-block");
+            $('.sec').css("height","100px");
+        });
+    });
+    $(function() {
+        $(".img2").click(function() {
+            console.log("clicked");
+            $('.img2').css("display","none");
+            var img = $('<img id="si2">');
+            img.attr('src', "img2.png");
+            img.attr('width', "100px");
+            img.attr('height', "100px");
+            $(".sec").append(img);
+            $('#si2').css("display","inline-block");
+            $('.sec').css("height","100px");
+        });
+    });
+    $(function() {
+        $(".img3").click(function() {
+            console.log("clicked");
+            $('.img3').css("display","none");
+            var img = $('<img id="si3">');
+            img.attr('src', "img3.png");
+            img.attr('width', "100px");
+            img.attr('height', "100px");
+            $(".sec").append(img);
+            $('#si3').css("display","inline-block");
+            $('.sec').css("height","100px");
+        });
+    });
+    $(function() {
+        $(".img4").click(function() {
+            console.log("clicked");
+            $('.img4').css("display","none");
+            var img = $('<img id="si4">');
+            img.attr('src', "img4.png");
+            img.attr('width', "100px");
+            img.attr('height', "100px");
+            $(".sec").append(img);
+            $('#si4').css("display","inline-block");
+            $('.sec').css("height","100px");
+        });
+    });
+    $(function() {
+        $(".img5").click(function() {
+            console.log("clicked");
+            $('.img5').css("display","none");
+            var img = $('<img id="si5">');
+            img.attr('src', "img5.png");
+            img.attr('width', "100px");
+            img.attr('height', "100px");
+            $(".sec").append(img);
+            $('#si5').css("display","inline-block");
+            $('.sec').css("height","100px");
+        });
+    });
+    $(function() {
+        $(".img6").click(function() {
+            console.log("clicked");
+            $('.img6').css("display","none");
+            var img = $('<img id="si6">');
+            img.attr('src', "img6.png");
+            img.attr('width', "100px");
+            img.attr('height', "100px");
+            $(".sec").append(img);
+            $('#si6').css("display","inline-block");
+            $('.sec').css("height","100px");
+        });
+    });
+    $(function() {
+        $(".img7").click(function() {
+            console.log("clicked");
+            $('.img7').css("display","none");
+            var img = $('<img id="si7">');
+            img.attr('src', "img7.png");
+            img.attr('width', "100px");
+            img.attr('height', "100px");
+            $(".sec").append(img);
+            $('#si7').css("display","inline-block");
+            $('.sec').css("height","100px");
+        });
+    });
+    $(function() {
+        $("#reset").click(function() {
+            $('.img1').css("display","inline-block");
+            $('#si1').css("display","none");
+
+            $('.img2').css("display","inline-block");
+            $('#si2').css("display","none");
+
+            $('.img3').css("display","inline-block");
+            $('#si3').css("display","none");
+
+            $('.img4').css("display","inline-block");
+            $('#si4').css("display","none");
+
+            $('.img5').css("display","inline-block");
+            $('#si5').css("display","none");
+
+            $('.img6').css("display","inline-block");
+            $('#si6').css("display","none");
+
+            $('.img7').css("display","inline-block");
+            $('#si7').css("display","none");
+        });
+    });
+</script>
